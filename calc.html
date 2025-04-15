@@ -10,10 +10,12 @@ addition, subtraction, multiplication, and division.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="calc.css">
 </head>
 <body>
-    <container id="Calculator">
+    <div id="Calculator">
         
         <input type="text" class="display" id="display" value="0" readonly>
         
@@ -42,21 +44,19 @@ addition, subtraction, multiplication, and division.
                 <div class="item">
                     <button>0</button>
                     <button>.</button>
-                    <span class="equal-to"><button>=</button></span>
-                    
+                    <button class="equal-to">=</button>
                 </div>   
-            </div class="item">
+            </div>
+            
             <div class="operator-btn">
                 <button>/</button>
                 <button>*</button>
                 <button>-</button>
                 <button>+</button>
-                
             </div>
-
         </div>
-    </container>
+    </div>
 
- <script src="calc.js"></script>   
+    <script src="calc.js"></script>   
 </body>
 </html>

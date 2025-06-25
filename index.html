@@ -1,63 +1,56 @@
 <!DOCTYPE html>
-<!--
-Objective:
-The goal of this project is to build a Calculator App using HTML, CSS, and JavaScript.
-The application should allow users to perform basic arithmetic operations like
-addition, subtraction, multiplication, and division.
--->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trust's Calculator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trust's Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <div id="Calculator">
-        <h1 class="name">Trust's Calculator</h1>
-        
-        <input type="text" class="display" id="display" value="0" readonly>
-        
-        <div class="buttons">
-            <div class="numeric-btn">
-                <div class="item">
-                    <button>C</button>
-                    <button>del</button>
-                    <button>%</button>
-                </div>
-                <div class="item">
-                    <button>9</button>
-                    <button>8</button>
-                    <button>7</button>
-                </div>
-                <div class="item">
-                    <button>6</button>
-                    <button>5</button>
-                    <button>4</button>
-                </div>
-                <div class="item">
-                    <button>3</button>
-                    <button>2</button>
-                    <button>1</button>
-                </div>
-                <div class="item">
-                    <button>0</button>
-                    <button>.</button>
-                    <button class="equal-to">=</button>
-                </div>   
-            </div>
-            
-            <div class="operator-btn">
-                <button>/</button>
-                <button>*</button>
-                <button>-</button>
-                <button>+</button>
-            </div>
-        </div>
-    </div>
+  <div id="Calculator">
+    <h1 class="name">Trust's Calculator</h1>
 
-    <script src="script.js"></script>   
+    <input type="text" class="display" id="display" value="0" readonly />
+
+    <div class="buttons">
+      <div class="numeric-btn">
+        <div class="item">
+          <button>C</button>
+          <button>del</button>
+          <button>%</button>
+        </div>
+        <div class="item">
+          <button>9</button>
+          <button>8</button>
+          <button>7</button>
+        </div>
+        <div class="item">
+          <button>6</button>
+          <button>5</button>
+          <button>4</button>
+        </div>
+        <div class="item">
+          <button>3</button>
+          <button>2</button>
+          <button>1</button>
+        </div>
+        <div class="item">
+          <button>0</button>
+          <button>.</button>
+          <button class="equal-to">=</button>
+        </div>
+      </div>
+
+      <div class="operator-btn">
+        <button>/</button>
+        <button>*</button>
+        <button>-</button>
+        <button>+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>

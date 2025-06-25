@@ -1,4 +1,4 @@
-let buttons = document.querySelectorAll("button");
+let buttons = document.querySelectorAll ("button");
 let display = document.querySelector("input");
 
 buttons.forEach(button => {
@@ -31,16 +31,16 @@ buttons.forEach(button => {
             default:
                 let lastChar = display.value.slice(-1);
 
-                // Prevent multiple dots in the same number
+                /* Prevent multiple dots in the same number */
                 if (value === '.' && lastChar === '.') return;
 
-                // Prevent invalid duplicate operators
+                /* Prevent invalid duplicate operators */
                 if (['+', '-', '*', '/'].includes(value) && ['+', '-', '*', '/'].includes(lastChar)) {
                     display.value = display.value.slice(0, -1) + value;
                     return;
                 }
 
-                // If initial value is "0", replace it unless it's a decimal
+                /* If initial value is "0", replace it unless it's a decimal */
                 if (display.value === '0') {
                     display.value = value === '.' ? '0.' : value;
                 } else {
